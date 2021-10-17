@@ -1,0 +1,14 @@
+<div class="container-fluid" style="background-color: white;">
+    <div class="row d-flex" style="justify-content: space-around;">
+        <div class="col-lg-12 d-flex" style="justify-content: space-around;">
+                <div class="col-lg-8">
+                <h5 > <label class="mr-2" for=""><b> Paste your URL : </b></label></h5>
+                <input required type="url" class="mb-2 mr-3" [(ngModel)]="longUrl">
+                <button class="button btn btn-sm mt-5 mb-5" (click)="generateCode()" style="background-color: lightblue; border-color: gray;">Shorten</button>
+                <div>
+                    <h5 ><b>Shortened URL : </b></h5><a href="{{longUrl}}" target="_blank"><b>{{shortUrl}}</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

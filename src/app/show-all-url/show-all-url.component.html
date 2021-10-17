@@ -1,0 +1,22 @@
+<div class="card mb-4">
+    <!-- <div class="card-header py-3" style="background-color: lightblue;">
+        <h6 class="m-0 font-weight-bold" style="color: black;">URL List </h6>
+    </div>
+
+    <div class="card-body"> -->
+        <div class="row d-flex" style="display: flex; justify-content: space-around;">
+            <div class="card shadow col-lg-5" *ngFor="let data of urlList">
+                <div class="card-header py-3" style="background-color: lightblue;">
+                    <h6 class=" font-weight-bold text-secondary" >URL no. {{data.id}}</h6>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Original URL: {{data.longurl}}</li>
+                        <li>Short URL: <a href="{{data.longurl}}" target="_blank" (click)="changeCount(data.id)"><b>{{data.shorturl}}</b></a></li>
+                        <li>No. of Clicks: {{data.clicks}}</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+    <!-- </div> -->
+</div>

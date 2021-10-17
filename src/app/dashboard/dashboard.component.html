@@ -1,0 +1,40 @@
+<body style="background-color: lightblue; height: 400px;" >
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 text-center ">
+        <h1 class="text-center"> DASHBOARD</h1>
+        </div>
+    </div>
+    <div class="row d-flex" style="justify-content: space-around;">
+        <div class="col-lg-6 d-flex ml-5 mt-3">
+            <div class="card border-left-primary shadow mr-5 h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-uppercase mb-1">Total number of Links</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{totalLinks}}</div>
+                        </div>
+                        <div class="col-auto ml-3 mr-2">
+                            <i class="fa fa-link fa-2x text-gray-300" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-left-primary shadow ml-5 h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-uppercase mb-1">Total number of Clicks</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{totalClicks}}</div>
+                        </div>
+                        <div class="col-auto ml-5 mr-2">
+                            <i class="fa fa-mouse-pointer fa-2x text-gray-300" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</body>
